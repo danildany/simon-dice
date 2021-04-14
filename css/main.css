@@ -1,0 +1,210 @@
+body{
+    font-family: 'Lilita One', cursive;
+    background:linear-gradient(90deg, hsl(216, 85%, 41%),hsl(335, 100%, 65%));
+}
+#rondas{
+   position: relative;
+   background: linear-gradient(hsl(192, 55%, 56%),hsl(217, 12%, 65%));;
+   height: 75px;
+   width: 450px;
+   border: 7px solid #0074d9;
+   border-radius: 5px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   font-size: 19px;
+
+}
+hr{
+    border-color: #0074d9;
+    border-style: solid none none none;
+    height: 10px;
+    border-top-width: thick;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+p{
+    margin: 0px 0px 0px 0px;
+
+}
+
+#rondas input[type='radio']{
+    display: none;
+}
+
+#rondas label {
+    display: inline-block;
+    position: relative;
+    color: #0074d9;
+    padding: 2px 15px 2px 51px  ;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#rondas label:hover{
+    background: rgba(0, 216, 217, 0.2);
+}
+
+#rondas label:before{
+    content: '';
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border:3px solid #0074d9;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+}
+#rondas input[type='radio']:checked + label{
+padding: 2px 15px;
+background: #0074d9;
+border-radius: 2px;
+color: white;
+}
+#rondas input[type='radio']:checked + label:before{
+    display: none;
+}
+
+
+#circulo{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 15px;
+    margin-top: 15px;
+    
+}
+#zona1{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px 0 0 0;
+    background: darkgreen;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0px 0px -250px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+}
+
+#zona2{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 250px 0 0;
+    background: darkred;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0px 0px 0px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+   
+}
+
+#zona3{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 0 250px;
+    background: goldenrod;
+    top: 50%;
+    left: 50%;
+    margin: 0px -250px 0px -250px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+   }
+
+#zona4{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 250px 0;
+   -webkit-border-radius: 0 0 250px 0;
+    background: darkblue;
+    top: 50%;
+    left: 50%;
+    margin: 0px 0px -250px 0px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+   }
+
+
+
+
+
+#circulo-interno{
+    background: #f0f0f5;
+    position: absolute;
+    margin: -125px 0px 0px -125px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 25px;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+}
+#start{
+    font-family: 'Lilita One', cursive;
+    position: absolute;
+    width: 200px; 
+    height: 100px; 
+    border: 5px solid #000; 
+    border-radius: 100px 100px 0 0;
+    top: 0%;
+    left: 0%;
+    box-sizing: border-box;
+    background: #b3e0ff;
+    font-size: 30px;
+}
+#start:hover{
+    background-color: #008CBA;
+    color: white;
+}
+#marcador{
+    position: absolute;
+    width: 200px; 
+    height: 100px; 
+    border: 5px solid #000; 
+    border-radius: 0 0 100px 100px;
+    top: 50%;
+    left: 0%;
+    box-sizing: border-box;
+    background: #ebebe0;
+    
+}
+#pantalla{
+    position: absolute;
+    background: #000;
+    color: red;
+    font-family: courier;
+    font-size: 20px;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    border: 3px solid #000; 
+    margin-left: 90px;
+    margin-top: 170px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    box-sizing: border-box;
+    top: -130%;
+    left: -10%;
+}
+#texto{
+    position: absolute;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SIMON DICE</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="rondas">
+<p>Elige Nº de Rondas</p>
+<hr>
+<input checked type="radio" name="rondas" id="ronda1" value="5" onclick="cantidadRondas()" >
+<label for="ronda1" >5</label>
+<input type="radio" name="rondas" id="ronda2" value="10" onclick="cantidadRondas()">
+<label for="ronda2" >10</label>
+<input type="radio" name="rondas" id="ronda3" value="15" onclick="cantidadRondas()">
+<label for="ronda3">15</label>
+<input type="radio" name="rondas" id="ronda4" value="20" onclick="ccantidadRondasosa()">
+<label for="ronda4" >20</label>
+<input type="radio" name="rondas" id="ronda5" value="25" onclick="ccantidadRondasosa()">
+<label for="ronda5">25</label>
+</div>
+<div id="circulo">
+<div class="cuadro" id="zona1"></div>
+<div class="cuadro" id="zona2"></div>
+<div class="cuadro" id="zona3"></div>
+<div class="cuadro" id="zona4"></div>
+<div id="circulo-interno">
+    <button id="start">PLAY</button>
+    <div id="marcador">
+    <div id="pantalla">-</div>
+    <div id="texto">RONDA Nº</div>
+    </div>
+</div>
+</div>
+<script src='js/main.js'></script>
+</body>
+</html>
