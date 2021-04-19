@@ -36,7 +36,7 @@ p{
     display: inline-block;
     position: relative;
     color: #000000;
-    padding: 2px 15px 2px 51px  ;
+    padding: 2px 30px 2px 30px ;
     font-size: 1em;
     border-radius: 3px;
     cursor: pointer;
@@ -44,7 +44,7 @@ p{
 #rondas label:hover{
     background: rgba(77, 80, 80, 0.2);
 }
-
+/*
 #rondas label:before{
     content: '';
     width: 17px;
@@ -56,8 +56,9 @@ p{
     position: absolute;
     left: 17px;
 }
+*/
 #rondas input[type='radio']:checked + label{
-padding: 2px 15px;
+padding: 2px 30px 2px 30px ;
 background: #000000;
 border-radius: 2px;
 color: white;
