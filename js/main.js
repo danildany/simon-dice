@@ -16,9 +16,10 @@ const $zona1 = document.querySelector('#zona1');
 const $zona2 = document.querySelector('#zona2');
 const $zona3 = document.querySelector('#zona3');
 const $zona4 = document.querySelector('#zona4');
+const $ronda = document.getElementsByName('rondas');
 
-function cantidadRondas() {
-  let $ronda = document.getElementsByName('rondas');
+const cantidadRondas = () => {
+  
   if ($ronda[0].checked) {
     nRondas = 5;
   }
@@ -34,9 +35,6 @@ function cantidadRondas() {
   if ($ronda[4].checked) {
     nRondas = 25;
   }
-
-
-
 }
 
 
