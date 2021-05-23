@@ -7,7 +7,7 @@ let correcto;
 let compTurn;
 let on = false;
 let win;
-let nRondas = 5;
+let nRondas=5;
 
 const $cuadro = document.querySelectorAll('.cuadro');
 const $inicio = document.getElementById('start');
@@ -38,15 +38,10 @@ const cantidadRondas = () => {
 }
 
 
-
-
-
-
 $inicio.addEventListener('click', (event) => {
     on = true;
-    if (on || win) {
-        play();
-      }
+    win = false; 
+    play();
 });
 
 function play(){
@@ -96,7 +91,7 @@ function gameTurn() {
   }
   
   function three() {
-    $zona3.style.backgroundColor = "yellow";
+    $zona3.style.backgroundColor = "lightyellow";
   }
   
   function four() {
@@ -112,7 +107,7 @@ function gameTurn() {
   function flashColor() {
     $zona1.style.backgroundColor = "lightgreen";
     $zona2.style.backgroundColor = "tomato";
-    $zona3.style.backgroundColor = "yellow";
+    $zona3.style.backgroundColor = "lightyellow";
     $zona4.style.backgroundColor = "lightskyblue";
   }
 
@@ -170,9 +165,9 @@ function gameTurn() {
   
 
   function check() {
-    if (secuenciaUsuario[secuenciaUsuario.length - 1] !== secuenciaMaquina[secuenciaUsuario.length - 1])
+    if (secuenciaUsuario[secuenciaUsuario.length - 1] !== secuenciaMaquina[secuenciaUsuario.length - 1]){
         correcto = false;
-  
+    }  
     if (secuenciaUsuario.length == nRondas && correcto) {
       winGame();
     }
