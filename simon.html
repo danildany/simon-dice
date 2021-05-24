@@ -6,11 +6,12 @@
     <title>SIMON DICE</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/info.css'>
     <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="rondas">
-<p>Elige Nº de Rondas</p>
+<p>Nº de Rondas</p>
 <hr>
 <input checked type="radio" name="rondas" id="ronda1" value="5" onclick="cantidadRondas()" >
 <label for="ronda1" >5</label>
@@ -22,6 +23,7 @@
 <label for="ronda4" >20</label>
 <input type="radio" name="rondas" id="ronda5" value="25" onclick="cantidadRondas()">
 <label for="ronda5">25</label>
+<div id="blocker"></div>
 </div>
 <div id="circulo">
 <div class="cuadro" id="zona1"></div>
@@ -36,6 +38,15 @@
     </div>
 </div>
 </div>
+<div id="info">
+    <button class="close">x</button>
+    <img class="arrow" src="imagenes/arrow_21.svg">
+    <img class="arrow2" src="imagenes/arrow_26.svg">
+    <p class="parrafo">Elegi la cantidad de rondas para jugar.</p>
+    <p class="parrafo2">Jugá</p>
+</div>
+<button class="rule">?</button>
 <script src='js/main.js'></script>
+<script src="js/info.js"></script>
 </body>
 </html>

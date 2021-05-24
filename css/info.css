@@ -1,0 +1,74 @@
+.rule{
+    border:2px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-family: inherit;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    letter-spacing: 2px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.rule:hover{
+    border:2px solid #000;
+    background-color: white;
+    color: #000;
+}
+#info{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.198);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+.close{
+    position: fixed;
+    border:2px solid hsl(228, 33%, 6%);
+    border-radius: 10px;
+    background-color: transparent;
+    color: hsl(228, 33%, 6%);
+    font-size: 20px;
+    margin-top: 20px;
+    top: 5px;
+    left: 20px;
+}
+.close:hover{
+    border:2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+.arrow {
+    position: relative;
+    width: 350px;
+    height: 100px;
+    top: 100px;
+    left: 75px;
+}
+.arrow2 {
+    position: relative;
+    width: 350px;
+    height: 100px;
+    top: 243px;
+    left: 350px;
+}
+.parrafo {
+    position: relative;
+    top: 220px;
+    right: 670px;
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+}
+.parrafo2 {
+    position: relative;
+    top: 215px;
+    left: 0;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}

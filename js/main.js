@@ -17,9 +17,7 @@ const $zona2 = document.querySelector('#zona2');
 const $zona3 = document.querySelector('#zona3');
 const $zona4 = document.querySelector('#zona4');
 const $ronda = document.getElementsByName('rondas');
-
 const cantidadRondas = () => {
-  
   if ($ronda[0].checked) {
     nRondas = 5;
   }
@@ -42,9 +40,11 @@ $inicio.addEventListener('click', (event) => {
     on = true;
     win = false; 
     play();
+    $inicio.disabled = true;
+    document.querySelector('#blocker').style.display = 'block'
 });
 
-function play(){
+const play =() => {
     secuenciaMaquina = [];
     secuenciaUsuario = [];
     flash = 0;
@@ -61,7 +61,7 @@ function play(){
     intervalo = setInterval(gameTurn, 800);
 }
 
-function gameTurn() {
+const gameTurn = () => {
    on = false;
     if (flash == ronda) {
       clearInterval(intervalo);
@@ -82,29 +82,29 @@ function gameTurn() {
     }
   }
   
-  function one() {
+ const  one = () => {
     $zona1.style.backgroundColor = "lightgreen";
   }
   
-  function two() {
+   const two = () => {
     $zona2.style.backgroundColor = "tomato";
   }
   
-  function three() {
+   const three = () => {
     $zona3.style.backgroundColor = "lightyellow";
   }
   
-  function four() {
+   const four = () => {
     $zona4.style.backgroundColor = "lightskyblue";
   }
 
-  function clearColor() {
+  const clearColor = () => {
     $zona1.style.backgroundColor = "darkgreen";
     $zona2.style.backgroundColor = "darkred";
     $zona3.style.backgroundColor = "goldenrod";
     $zona4.style.backgroundColor = "darkblue";
   }
-  function flashColor() {
+  const flashColor = () => {
     $zona1.style.backgroundColor = "lightgreen";
     $zona2.style.backgroundColor = "tomato";
     $zona3.style.backgroundColor = "lightyellow";
@@ -164,7 +164,7 @@ function gameTurn() {
   })
   
 
-  function check() {
+  const check = () => {
     if (secuenciaUsuario[secuenciaUsuario.length - 1] !== secuenciaMaquina[secuenciaUsuario.length - 1]){
         correcto = false;
     }  
@@ -176,6 +176,8 @@ function gameTurn() {
       flashColor(); 
       $pantalla.innerHTML = "NO!";
       $inicio.textContent = 'PLAY';
+      $inicio.disabled = false;
+      document.querySelector('#blocker').style.display = 'none'
     }
   
     if (ronda == secuenciaUsuario.length && correcto && !win) {
@@ -189,10 +191,12 @@ function gameTurn() {
   
   }
   
-  function winGame() {
+  const winGame = () => {
     flashColor();
     $pantalla.innerHTML = "WIN!";
     $inicio.textContent = 'PLAY';
     on = false;
     win = true;
+    $inicio.disabled = false;
+    document.querySelector('#blocker').style.display = 'none'
   }
