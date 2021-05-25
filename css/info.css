@@ -27,20 +27,23 @@
     left: 0;
 }
 .close{
-    position: fixed;
-    border:2px solid hsl(228, 33%, 6%);
+    border:2px solid #fff;
     border-radius: 10px;
     background-color: transparent;
-    color: hsl(228, 33%, 6%);
+    color: #fff;
     font-size: 20px;
-    margin-top: 20px;
-    top: 5px;
-    left: 20px;
+    font-family: inherit;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    letter-spacing: 2px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
 }
 .close:hover{
-    border:2px solid rgb(255, 255, 255);
-    background-color: transparent;
-    color: rgb(255, 255, 255);
+    border:2px solid #000;
+    background-color: white;
+    color: #000;
 }
 .arrow {
     position: relative;
